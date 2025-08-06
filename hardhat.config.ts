@@ -6,7 +6,7 @@ import "solidity-coverage";
 import dotenv from "dotenv";
 dotenv.config();
 
-const sepoliaRPCURL = (process.env.SEPOLIA_RPC_URL as string) || "******"; // specifying "or" values like so can be helpful.
+const sepoliaRPCURL = (process.env.RPC_URL as string) || "******"; // specifying "or" values like so can be helpful.
 const privateKey = process.env.PRIVATE_KEY as string;
 const etherscanAPIKey = process.env.ETHERSCAN_API_KEY;
 const coinMarketCapAPIKey = process.env.COINMARKETCAP_API_KEY;
