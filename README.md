@@ -12,6 +12,7 @@ A Smart Contract(Hardhat Ignition) helper project - demonstrating Solidity smart
 4. **solidity-coverage** - for assessing the measure of test coverage on the smart contracts.
 5. **solhint** - for Solidity(smart contracts) linting.
 6. **dotenv** 😒.
+7. **solidity-docgen** - for documentation generation using Natspec comments
 
 ## Important commands.
 
@@ -50,6 +51,8 @@ For linting Solidity(smart contract) code with solhint(see the `lint` script ins
 8. `npx hardhat docgen`
 
 Generates markdown documentations(using Natspec comments that has been added to the contracts) - thanks to OpenZepellin's `solidity-docgen` utility/library
+
+> **The generated docs can be found inside the `docs` folder.**
 
 
 
