@@ -47,6 +47,10 @@ Checks for test coverage. Ensure to add the "solidity coverage import to your ha
 
 For linting Solidity(smart contract) code with solhint(see the `lint` script inside `package.json`).
 
+8. `npx hardhat docgen`
+
+Generates markdown documentations(using Natspec comments that has been added to the contracts) - thanks to OpenZepellin's `solidity-docgen` utility/library
+
 
 
 

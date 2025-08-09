@@ -2,6 +2,7 @@ import { HardhatUserConfig } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
 import "hardhat-contract-sizer";
 import "solidity-coverage";
+import "solidity-docgen";
 
 import dotenv from "dotenv";
 dotenv.config();
@@ -59,6 +60,16 @@ const config: HardhatUserConfig = {
         // coinmarketcap: coinMarketCapAPIKey, // we need this to work with the currency part. it makes an API call to coinmarketcap anytime we run the gas reporter(i.e. anytime we run the tests). Hence it might be important to comment this out sometimes so we save the api calls.
         // token: 'ETH', // this specifies the token with you you want to get the gas report in relation to. Prices might show zeros it's because the USD values in relation to a specified token is very small compared to the allowed decimal places.
         token: "MATIC",
+    },
+    docgen: {
+        // root: process.cwd(),
+        // sourcesDir: "contracts",
+        outputDir: "./docs",
+        pages: "single",
+        exclude: [],
+        theme: "markdown",
+        collapseNewlines: true,
+        pageExtension: ".md",
     },
 };
 
